@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".ThirdActivity"
+    android:padding="16dp">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inbox"
+        android:backgroundTint="@color/white"
+        android:textColor="#3B84F1"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:id="@+id/inbox_cards"
+        />
+
+
+    <ImageView
+        android:id="@+id/doctor_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/doctor_image_placeholder" />
+
+
+
+    <TextView
+        android:id="@+id/firstNameLabel"
+        android:text="First Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+
+
+    <TextView
+        android:id="@+id/lastNameLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+<!--    <EditText-->
+<!--        android:id="@+id/emailInput"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        android:hint="Enter Email"/>-->
+
+    <!-- Add more labels and input fields as needed -->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:backgroundTint="@color/white"
+        android:textColor="#3B84F1"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:id="@+id/logout_button"
+        />
+
+</LinearLayout>

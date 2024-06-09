@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "750311183165",
+    "project_id": "threeandroid-dd199",
+    "storage_bucket": "threeandroid-dd199.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750311183165:android:374a7808f352e29df62b54",
+        "android_client_info": {
+          "package_name": "com.example.thirdapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0RKtdCoCzf5lTe17G1Vmdsg5SldQ9SI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

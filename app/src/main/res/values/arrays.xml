@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="doctor_names">
+        <item>Dr. Smith</item>
+        <item>Dr. Johnson</item>
+        <item>Dr. Williams</item>
+    </string-array>
+
+    <string-array name="appointment_times">
+        <item>09:00 AM - 10:00 AM</item>
+        <item>10:00 AM - 11:00 AM</item>
+        <item>11:00 AM - 12:00 PM</item>
+    </string-array>
+</resources>
