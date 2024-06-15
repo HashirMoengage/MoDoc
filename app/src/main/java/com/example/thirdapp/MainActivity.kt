@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var phone : EditText
     lateinit var language_pref: EditText
     lateinit var register_btn : Button
+    lateinit var bypass_btn : Button
 
     override fun onStart() {
         super.onStart()
@@ -54,25 +55,32 @@ class MainActivity : AppCompatActivity() {
         last_name = findViewById(R.id.last_name)
         email = findViewById(R.id.email)
         phone = findViewById(R.id.phone)
-        language_pref = findViewById(R.id.language)
+//        language_pref = findViewById(R.id.language)
         register_btn = findViewById(R.id.signup_btn)
+        bypass_btn = findViewById(R.id.bypass_btn)
+
+        bypass_btn.setOnClickListener{
+
+            val intent = Intent(this , MiddlePageActivity::class.java)
+            startActivity(intent)
+        }
 //
         register_btn.setOnClickListener {
             val firstname = first_name.text.toString()
             val lastname = last_name.text.toString()
             val email = email.text.toString()
             val phone = phone.text.toString()
-            val language = language_pref.text.toString()
 
-            Log.i("Test Credentials" , "Username: $firstname and password $lastname and $email and $phone and $language")
+
+            Log.i("Test Credentials" , "Username: $firstname and password $lastname and $email and $phone")
 
             MoEAnalyticsHelper.setUniqueId(application, email)
             MoEAnalyticsHelper.setFirstName(application , firstname)
-            MoEAnalyticsHelper.setLastName(application , lastname)
+            MoEAnalyticsHelper.setLastName(application , lastname )
             MoEAnalyticsHelper.setUserName(application , "$firstname $lastname")
             MoEAnalyticsHelper.setMobileNumber(application , phone)
             MoEAnalyticsHelper.setEmailId(application , email)
-            MoEAnalyticsHelper.setUserAttribute(application,"language_preference", language)
+//            MoEAnalyticsHelper.setUserAttribute(application,"language_preference", language)
             MoEAnalyticsHelper.trackDeviceLocale(application)
 
             val properties = Properties()

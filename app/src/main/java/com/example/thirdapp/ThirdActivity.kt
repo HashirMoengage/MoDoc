@@ -1,8 +1,10 @@
 package com.example.thirdapp
 
 import android.content.Intent
+import android.media.Image
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -23,8 +25,8 @@ class ThirdActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_third)
 
-        val logout_button: Button = findViewById(R.id.logout_button)
-        val inbox_cards : Button = findViewById(R.id.inbox_cards)
+        val logout_button : ImageButton = findViewById(R.id.logout_button)
+        val inbox_cards : ImageButton = findViewById(R.id.inbox_cards)
         MoEInAppHelper.getInstance().showInApp(this)
 
         logout_button.setOnClickListener{

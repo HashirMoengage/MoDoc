@@ -8,31 +8,26 @@
     tools:context=".ThirdActivity"
     android:padding="16dp">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Inbox"
-        android:backgroundTint="@color/white"
-        android:textColor="#3B84F1"
-        android:padding="10dp"
-        android:layout_marginTop="8dp"
-        android:textSize="20sp"
+
+    <ImageButton
         android:id="@+id/inbox_cards"
-        />
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bellicon" />
+
 
 
     <ImageView
-        android:id="@+id/doctor_image"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/doctor_image_placeholder" />
-
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user"
+        android:layout_gravity="center"
+        />
 
     <TextView
         android:id="@+id/firstNameLabel"
-        android:text="First Name"
+        android:text="Hashir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -42,13 +37,11 @@
         android:textStyle="bold"
         />
 
-
-
     <TextView
         android:id="@+id/lastNameLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Last Name"
+        android:text="Yameen"
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:textColor="@android:color/white"
@@ -61,7 +54,7 @@
         android:id="@+id/emailLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email"
+        android:text="hashiryameen8@gmail.com"
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:textColor="@android:color/white"
@@ -78,16 +71,16 @@
 
     <!-- Add more labels and input fields as needed -->
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Logout"
-        android:backgroundTint="@color/white"
-        android:textColor="#3B84F1"
-        android:padding="10dp"
-        android:layout_marginTop="8dp"
-        android:textSize="20sp"
+
+
+    <ImageButton
+        android:src="@drawable/logout"
         android:id="@+id/logout_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
         />
 
 </LinearLayout>

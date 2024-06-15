@@ -29,6 +29,7 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_second)
 
          val viewProfileButton : Button = findViewById(R.id.profile_btn)
+         val inappButton : Button = findViewById(R.id.inapp_btn)
 
         // Initialize views
 //        val doctorImage = findViewById<ImageView>(R.id.doctor_image)
@@ -37,6 +38,11 @@ class SecondActivity : AppCompatActivity() {
         val doctorSpinner = findViewById<Spinner>(R.id.doctor_spinner)
         val timeSpinner = findViewById<Spinner>(R.id.time_spinner)
         bookAppointmentButton = findViewById(R.id.book_appointment_btn)
+
+        inappButton.setOnClickListener{
+
+            MoEInAppHelper.getInstance().showInApp(this)
+        }
 
 
 

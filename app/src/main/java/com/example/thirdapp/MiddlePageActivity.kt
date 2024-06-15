@@ -24,7 +24,7 @@ class MiddlePageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_middle_page)
 
         val book_appointment_button : Button = findViewById(R.id.button_book_appointment)
-        val start_free_trial : Button = findViewById(R.id.button_start_free_trial)
+//        val start_free_trial : Button = findViewById(R.id.button_start_free_trial)
         MoEInAppHelper.getInstance().showInApp(this)
 
         book_appointment_button.setOnClickListener{
